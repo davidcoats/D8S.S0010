@@ -7,7 +7,7 @@ namespace D8S.S0010
     {
         static void Main()
         {
-            Console.WriteLine("Hello World!");
+            Demonstrations.Instance.In_ProjectElementContext();
         }
     }
 }
