@@ -1,2 +1,2 @@
 # D8S.S0010
-Visual Studio project element scripts.
+Personal Visual Studio project element scripts.
