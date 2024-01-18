@@ -18,7 +18,10 @@ namespace D8S.S0010
                 @"C:\Code\DEV\Git\GitHub\SafetyCone\R5T.F0000\source\R5T.F0000\R5T.F0000.csproj",
                 @"C:\Code\DEV\Git\GitHub\SafetyCone\R5T.NG0010\source\R5T.NG0010\R5T.NG0010.csproj"
             };
-            var projectDescription = Instances.Values.DescriptionForProject_Default;
+            var projectDescription =
+                //Instances.Values.DescriptionForProject_Default
+                Instances.Values.DescriptionForProject_Example
+                ;
 
 
             /// Run.
@@ -29,10 +32,15 @@ namespace D8S.S0010
                 //    projectDescription,
                 //    referenceProjectFilePaths,
                 //    Instances.PropertyGroupXElementOperations.Set_RepositoryUrl("https://github.com/SafetyCone/R5T.F0069.git"))
-                ._Rivet.Console_WithCOMReference(
-                    expectedProjectFilePath.Value,
+                //._Rivet.Console_WithCOMReference(
+                //    expectedProjectFilePath.Value,
+                //    projectDescription,
+                //    referenceProjectFilePaths,
+                //    Instances.PropertyGroupXElementOperations.Set_RepositoryUrl("https://github.com/SafetyCone/R5T.F0069.git"))
+                //._Common.BlazorWebAssemblyClient_Net_8
+                ._Rivet.BlazorWebAssemblyClient_Net_8(
                     projectDescription,
-                    referenceProjectFilePaths,
+                    Instances.Authors.DCoats.Value,
                     Instances.PropertyGroupXElementOperations.Set_RepositoryUrl("https://github.com/SafetyCone/R5T.F0069.git"))
                 ;
 

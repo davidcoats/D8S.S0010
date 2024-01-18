@@ -11,6 +11,7 @@ namespace D8S.S0010
         public static R5T.Z0051.ICOMReferences COMReferences => R5T.Z0051.COMReferences.Instance;
         public static R5T.L0066.IContextOperator ContextOperator => R5T.L0066.ContextOperator.Instance;
         public static R5T.L0032.Z002.IGroupLabels GroupLabels => R5T.L0032.Z002.GroupLabels.Instance;
+        public static R5T.Z0050.Z001.IPackageReferences PackageReferences => R5T.Z0050.Z001.PackageReferences.Instance;
         public static R5T.L0033.F001.IProjectElementContextOperator ProjectElementContextOperator => R5T.L0033.F001.ProjectElementContextOperator.Instance;
         public static R5T.L0032.F003.IValues Values => R5T.L0032.F003.Values.Instance;
 
