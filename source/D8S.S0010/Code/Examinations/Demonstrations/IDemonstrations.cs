@@ -27,21 +27,22 @@ namespace D8S.S0010
             /// Run.
             var projectXElementContextActions = Instances.ProjectXElementOperationSets
                 //._Common.Net_8_Console
-                //._Rivet.Net_8_Console(
-                //    expectedProjectFilePath.Value,
-                //    projectDescription,
-                //    referenceProjectFilePaths,
-                //    Instances.PropertyGroupXElementOperations.Set_RepositoryUrl("https://github.com/SafetyCone/R5T.F0069.git"))
+                ._Rivet.Console_Net_8(
+                    expectedProjectFilePath.Value,
+                    projectDescription,
+                    Instances.Authors.DCoats.Value,
+                    referenceProjectFilePaths,
+                    Instances.PropertyGroupXElementOperations.Set_RepositoryUrl("https://github.com/SafetyCone/R5T.F0069.git"))
                 //._Rivet.Console_WithCOMReference(
                 //    expectedProjectFilePath.Value,
                 //    projectDescription,
                 //    referenceProjectFilePaths,
                 //    Instances.PropertyGroupXElementOperations.Set_RepositoryUrl("https://github.com/SafetyCone/R5T.F0069.git"))
                 //._Common.BlazorWebAssemblyClient_Net_8
-                ._Rivet.BlazorWebAssemblyClient_Net_8(
-                    projectDescription,
-                    Instances.Authors.DCoats.Value,
-                    Instances.PropertyGroupXElementOperations.Set_RepositoryUrl("https://github.com/SafetyCone/R5T.F0069.git"))
+                //._Rivet.BlazorWebAssemblyClient_Net_8(
+                //    projectDescription,
+                //    Instances.Authors.DCoats.Value,
+                //    Instances.PropertyGroupXElementOperations.Set_RepositoryUrl("https://github.com/SafetyCone/R5T.F0069.git"))
                 ;
 
             var (writtenProjectFilePath, humanOutputTextFilePath, _) = Instances.Operator.In_SampleProjectFileContext(
